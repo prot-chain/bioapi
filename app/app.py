@@ -15,7 +15,11 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(
+    title="BioAPI service",
+    lifespan=lifespan,
+    version="1.0"
+)
 
 # CORS Middleware
 origins = [
