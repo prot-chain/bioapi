@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from app.service.pdb.fetch import PDBFetchService
+from service.pdb.fetch import PDBFetchService
 
 # Initialize logger
 logger = logging.getLogger(__name__)
