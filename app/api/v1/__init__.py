@@ -1,6 +1,6 @@
-from .endpoints import pdb
+from .endpoints import protein
 
 from fastapi import APIRouter
 
 router = APIRouter()
-router.include_router(pdb.router, prefix="/pdb", tags=["pdb"])
+router.include_router(protein.router, prefix="/protein", tags=["uniprot"])

@@ -1,4 +1,4 @@
-import requests
+from httpx import AsyncClient
 
 
 class PDBFetchService:
@@ -8,7 +8,7 @@ class PDBFetchService:
 
     BASE_URL = "https://data.rcsb.org/rest/v1/core/entry"
 
-    def fetch_protein_data(self, protein_id: str) -> dict:
+    async def fetch_protein_data(self, protein_id: str) -> dict:
         """
         Fetch raw protein data from the PDB API.
 
@@ -18,12 +18,13 @@ class PDBFetchService:
         Returns:
             dict: Raw protein data.
         """
-        response = requests.get(f"{self.BASE_URL}/{protein_id}")
-        if response.status_code != 200:
-            raise Exception(f"Failed to fetch protein data for ID {protein_id}")
-        return response.json()
+        async with AsyncClient() as client:
+            response = await client.get(f"{self.BASE_URL}/{protein_id}")
+            if response.status_code != 200:
+                raise Exception(f"Failed to fetch protein data for ID {protein_id}")
+            return response.json()
 
-    def parse_protein_data(self, raw_data: dict) -> dict:
+    async def parse_protein_data(self, raw_data: dict) -> dict:
         """
         Parse raw protein data into a structured format.
 
