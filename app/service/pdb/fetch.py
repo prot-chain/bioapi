@@ -1,3 +1,4 @@
+from service.utils import pdb_file_download_link
 from httpx import AsyncClient
 
 
@@ -34,9 +35,8 @@ class PDBFetchService:
         Returns:
             dict: Parsed protein data.
         """
-        return {
-            "id": raw_data.get("rcsb_id"),
-            "title": raw_data.get("struct", {}).get("title"),
-            "keywords": raw_data.get("struct_keywords", {}).get("text"),
-            "resolution": raw_data.get("rcsb_entry_info", {}).get("resolution_combined")
+        parsed_data = {
+            "primary_accesion": raw_data.get("entry", {}).get("id", ""),
         }
+        parsed_data["pdb_link"] = pdb_file_download_link(
+            parsed_data["primary_accesion"])
