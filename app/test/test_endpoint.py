@@ -1,4 +1,5 @@
 import pytest
+import json
 from unittest.mock import AsyncMock
 from fastapi.testclient import TestClient
 from fastapi import status
@@ -17,6 +18,115 @@ from schema.pdb import (PDBEntry,
                         Exptl, ExptlCrystal, RevisionCategory, RevisionDetails,
                         Diffrn
                         )
+
+
+mock_pdb_return = PDBEntry(
+        audit_author=[
+            Author(name="Fermi, G.", pdbx_ordinal=1),
+            Author(name="Perutz, M.F.", pdbx_ordinal=2)
+        ],
+        cell=Cell(
+            angle_alpha=90.0,
+            angle_beta=99.34,
+            angle_gamma=90.0,
+            length_a=63.15,
+            length_b=83.59,
+            length_c=53.8,
+            zpdb=4
+        ),
+        citation=[
+            Citation(
+                country="UK",
+                id="primary",
+                journal_abbrev="J.Mol.Biol.",
+                journal_volume="175",
+                page_first="159",
+                page_last="174",
+                title="The crystal structure of human deoxyhaemoglobin at 1.74 A resolution",
+                year=1984,
+                pdbx_database_id_doi="10.1016/0022-2836(84)90472-8",
+                pdbx_database_id_pub_med=6726807,
+                rcsb_authors=["Fermi, G.", "Perutz, M.F.", "Shaanan, B.", "Fourme, R."],
+                rcsb_is_primary="Y"
+            )
+        ],
+        diffrn=[
+            Diffrn(crystal_id="1", id="1")
+        ],
+        exptl=[
+            Exptl(method="X-RAY DIFFRACTION")
+        ],
+        exptl_crystal=[
+            ExptlCrystal(density_matthews=2.26, density_percent_sol=45.48, id="1")
+        ],
+        pdbx_audit_revision_category=[
+            RevisionCategory(category="atom_site", data_content_type="Structure model", ordinal=1, revision_ordinal=4)
+        ],
+        pdbx_audit_revision_details=[
+            RevisionDetails(
+                data_content_type="Structure model",
+                details="Coordinates updated",
+                ordinal=1,
+                provider="repository",
+                revision_ordinal=6,
+                type="Remediation"
+            )
+        ],
+        pdbx_audit_revision_group=[
+            RevisionGroup(
+                data_content_type="Structure model",
+                group="Version format compliance",
+                ordinal=1,
+                revision_ordinal=2
+            )
+        ],
+        pdbx_audit_revision_history=[
+            RevisionHistory(
+                data_content_type="Structure model",
+                major_revision=4,
+                minor_revision=0,
+                ordinal=6,
+                revision_date="2023-02-08T00:00:00+0000"
+            )
+        ],
+        rcsb_accession_info=RcsbAccessionInfo(
+            deposit_date="1984-03-07T00:00:00+0000",
+            has_released_experimental_data="N",
+            initial_release_date="1984-07-17T00:00:00+0000",
+            major_revision=4,
+            minor_revision=2,
+            revision_date="2024-05-22T00:00:00+0000",
+            status_code="REL"
+        ),
+        rcsb_entry_container_identifiers=RcsbEntryContainerIdentifiers(
+            assembly_ids=["1"],
+            entity_ids=["1", "2", "3", "4", "5"],
+            entry_id="4HHB",
+            non_polymer_entity_ids=["3", "4"],
+            polymer_entity_ids=["1", "2"],
+            rcsb_id="4HHB",
+            pubmed_id=6726807
+        ),
+        rcsb_entry_info=RcsbEntryInfo(
+            assembly_count=1,
+            deposited_atom_count=4779,
+            deposited_model_count=1,
+            experimental_method="X-ray",
+            molecular_weight=64.74
+        ),
+        struct=Struct(
+            title="The crystal structure of human deoxyhaemoglobin at 1.74 A resolution"
+        ),
+        symmetry=Symmetry(
+            int_tables_number=4,
+            space_group_name_hm="P 1 21 1"
+        ),
+        rcsb_id="4HHB"
+)
+
+moc_uniprot_return = {}
+with open("app/test/uniprot_test_response.json", 'r') as file:
+    mock_uniprot_return = json.load(file)
 
 
 @pytest.fixture
@@ -150,26 +260,10 @@ def mock_uniprot_service():
     mock_service = AsyncMock(spec=UniprotFetchService)
 
     # Mock fetch_protein_data
-    mock_service.fetch_protein_data.return_value = {
-        "primaryAccession": "Q9H9Q4",
-        "proteinDescription": {
-            "recommendedName": {"fullName": {"value": "Example UniProt Protein"}}
-        },
-        "organism": {
-            "scientificName": "Homo sapiens",
-            "commonName": "Human"
-        },
-        "entryAudit": {
-            "firstPublicDate": "2000-01-01",
-            "lastAnnotationUpdateDate": "2023-01-01",
-            "sequenceVersion": 1,
-            "entryVersion": 42
-        },
-        "sequence": "ATCGATCG",
-        "uniProtKBCrossReferences": [{"database": "PDB", "id": "3TOP"}],
-    }
+    mock_service.fetch_protein_data.return_value = mock_uniprot_return
 
     # Mock parse_protein_data
+    # TODO: update mock
     mock_service.parse_protein_data.return_value = ProteinData(
         primary_accession="Q9H9Q4",
         recommended_name="Example UniProt Protein",
@@ -192,7 +286,24 @@ def client(override_dependencies):
 
 
 @pytest.mark.asyncio
-async def test_retrieve_protein_by_pdb_id(client, mock_pdb_service):
+async def test_retrieve_protein_by_id_invalid(
+        client,
+        mock_pdb_service,
+        mock_uniprot_service,
+):
+    protein_id = "INVALID!"  # Invalid protein ID
+    response = client.get(f"/api/v1/protein/{protein_id}")
+
+    assert response.status_code == 400
+    assert response.json() == {"detail": "Invalid protein ID format."}
+    mock_pdb_service.fetch_protein_data.assert_not_called()
+    mock_uniprot_service.fetch_protein_data.assert_not_called()
+    mock_pdb_service.parse_protein_data.assert_not_called()
+    mock_uniprot_service.parse_protein_data.assert_not_called()
+
+
+@pytest.mark.asyncio
+async def test_retrieve_protein_by_pdb_id(client, mock_pdb_service, mock_uniprot_service):
     """Test endpoint with a PDB ID."""
     protein_id = "4HHB"
     response = client.get(f"/api/v1/protein/{protein_id}")
@@ -225,11 +336,12 @@ async def test_retrieve_protein_by_pdb_id(client, mock_pdb_service):
         }
     }
     mock_pdb_service.fetch_protein_data.assert_awaited_once_with("4HHB")
-    mock_pdb_service.parse_protein_data.assert_awaited_once()
+    mock_pdb_service.parse_protein_data.assert_awaited_once_with(mock_pdb_return)
+    mock_uniprot_service.assert_not_awaited()
 
 
 @pytest.mark.asyncio
-async def test_retrieve_protein_by_uniprot_id(client, mock_uniprot_service):
+async def test_retrieve_protein_by_uniprot_id(client, mock_uniprot_service, mock_pdb_service):
     """Test endpoint with a UniProt ID."""
     protein_id = "Q9H9Q4"
     response = client.get(f"/api/v1/protein/{protein_id}")
@@ -240,8 +352,28 @@ async def test_retrieve_protein_by_uniprot_id(client, mock_uniprot_service):
         "data": {
             "primary_accession": "Q9H9Q4",
             "recommended_name": "Example UniProt Protein",
-            "sequence": "ATCGATCG"
+            "organism": {
+                "scientific_name": "",
+                "common_name": ""
+            },
+            "entry_audit": {
+                "first_public_date": "",
+                "last_annotation_update_date": "",
+                "sequence_version": 0,
+                "entry_version": 0
+            },
+            "functions": [],
+            "subunit_structure": [],
+            "subcellular_locations": [],
+            "disease_associations": [],
+            "isoforms": [],
+            "features": [],
+            "pdb_ids": [],
+            "pdb_link": None,
+            "sequence": None
         }
     }
-    mock_uniprot_service.fetch_protein_data.assert_awaited_once_with(protein_id, format="json")
-    mock_uniprot_service.parse_protein_data.assert_called_once()
+    mock_uniprot_service.fetch_protein_data.assert_awaited_once_with(protein_id)
+    mock_uniprot_service.parse_protein_data.assert_called_once_with(
+        mock_uniprot_return)  # TODO: revisit
+    mock_pdb_service.assert_not_awaited()

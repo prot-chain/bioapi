@@ -1,13 +1,5 @@
-import pytest
-from fastapi import status
-from fastapi.testclient import TestClient
-from unittest.mock import AsyncMock
-
-from starlette.status import HTTP_200_OK
-from app import app
-
-# Import your service classes
-from schema.pdb import (Cell, PDBEntry,
+import json
+from schema.pdb import (PDBEntry,
                         Author,
                         RcsbEntryInfo,
                         Struct,
@@ -18,75 +10,9 @@ from schema.pdb import (Cell, PDBEntry,
                         Exptl, ExptlCrystal, RevisionCategory, RevisionDetails,
                         Diffrn
                         )
-from service.pdb.fetch import PDBFetchService
-from service.uniprot import UniprotFetchService
-
-client = TestClient(app)
 
 
-@pytest.fixture
-def mock_uniprot_service():
-    service = AsyncMock(spec=UniprotFetchService)
-    return service
-
-
-@pytest.fixture
-def mock_pdb_service():
-    service = AsyncMock(spec=PDBFetchService)
-    return service
-
-
-@pytest.fixture
-def mock_pdb_service_3top_200():
-    service = AsyncMock(spec=PDBFetchService)
-    #service.fetch_protein_data.return_value = PDBEntry()
-    #service.parse_protein_data.return_value = ProteinData()
-    return service
-
-
-@pytest.fixture
-def mock_protein_endpoint_invalid_call():
-    """
-    mock_uniprot_service_200 mocks the uniprot service for a successful
-    call
-    """
-    uniprot_service = AsyncMock(spec=UniprotFetchService)
-    pdb_service = AsyncMock(spec=PDBFetchService)
-
-
-@pytest.fixture
-def override_dependencies(mock_uniprot_service, mock_pdb_service):
-    app.dependency_overrides[UniprotFetchService] = lambda: mock_uniprot_service
-    app.dependency_overrides[PDBFetchService] = lambda: mock_pdb_service
-    yield
-    app.dependency_overrides = {}
-
-
-# Integration Tests
-@pytest.mark.asyncio
-#async def test_retrieve_protein_by_id_invalid(
-#        mock_pdb_service,
-#        mock_uniprot_service,
-#        override_dependencies
-#):
-#    protein_id = "INVALID!"  # Invalid protein ID
-#    response = client.get(f"/api/v1/protein/{protein_id}")
-#
-#    assert response.status_code == 400
-#    assert response.json() == {"detail": "Invalid protein ID format."}
-#    mock_pdb_service.fetch_protein_data.assert_not_called()
-#    mock_uniprot_service.fetch_protein_data.assert_not_called()
-#    mock_pdb_service.parse_protein_data.assert_not_called()
-#    mock_uniprot_service.parse_protein_data.assert_not_called()
-
-
-@pytest.mark.asyncio
-async def test_retrieve_protein_by_pdb_id(
-        mock_pdb_service,
-        mock_uniprot_service,
-        override_dependencies
-):
-    mock_pdb_service.fetch_protein_data.return_value = PDBEntry(
+mock_pdb_return = PDBEntry(
         audit_author=[
             Author(name="Fermi, G.", pdbx_ordinal=1),
             Author(name="Perutz, M.F.", pdbx_ordinal=2)
@@ -188,8 +114,8 @@ async def test_retrieve_protein_by_pdb_id(
             space_group_name_hm="P 1 21 1"
         ),
         rcsb_id="4HHB"
-    )
-    protein_id = "4HHB"
-    response = client.get(f"/api/v1/protein/{protein_id}")
-    assert response.status_code == status.HTTP_200_OK
-    print(response.json())
+)
+
+moc_uniprot_return = {}
+with open("app/test/uniprot_test_response.json", 'r') as file:
+    mock_uniprot_return = json.load(file)
