@@ -93,7 +93,7 @@ class RcsbEntryContainerIdentifiers(BaseModel):
     assembly_ids: List[str] = []
     entity_ids: List[str] = []
     entry_id: Optional[str] = ""
-    m_identifiers: List[int] = Field(alias="model_ids")
+    m_identifiers: List[int] = Field(alias="model_ids", default=[])
     non_polymer_entity_ids: List[str] = []
     polymer_entity_ids: List[str] = []
     rcsb_id: Optional[str] = ""
@@ -130,7 +130,7 @@ class PDBEntry(BaseModel):
     pdbx_audit_revision_group: List[RevisionGroup] = []
     pdbx_audit_revision_history: List[RevisionHistory] = []
     rcsb_accession_info: Optional[RcsbAccessionInfo] = RcsbAccessionInfo()
-    rcsb_entry_container_identifiers: Optional[RcsbEntryContainerIdentifiers]
+    rcsb_entry_container_identifiers: Optional[RcsbEntryContainerIdentifiers] = RcsbEntryContainerIdentifiers()
     rcsb_entry_info: Optional[RcsbEntryInfo] = RcsbEntryInfo()
     struct: Optional[Struct] = Struct()
     symmetry: Optional[Symmetry] = Symmetry()
