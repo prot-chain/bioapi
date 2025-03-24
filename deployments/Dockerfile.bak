@@ -1,5 +1,5 @@
 # Step 1: Build stage
-FROM python:3.11-slim AS builder
+FROM python:3.11-slim as builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -25,17 +25,24 @@ COPY --from=builder /root/.local /root/.local
 # Add Python to PATH environment variable
 ENV PATH=/root/.local/bin:$PATH
 
-# Install additional dependencies
+# Install additional packages and create directories
 RUN pip install pyyaml
-
-# Create necessary directories
 RUN mkdir -p /app/data/templates /app/data/workflows /app/data/workflow_results /app/data/workflow_state /app/bin
 
 # Copy the rest of the app's source code
 COPY . .
 
+# Copy workflow binary
+# Note: We'll copy this manually after the container is running, as it's not available during build
+# COPY bin/protchainworkflow /app/bin/
+
 # Expose the port that the FastAPI app will run on
 EXPOSE 80
 
 # Command to run the FastAPI app
+# Install additional dependencies
+RUN pip install pyyaml
+
+# Create necessary directories
+RUN mkdir -p /app/data/templates /app/data/workflows /app/data/workflow_results /app/data/workflow_state /app/bin
 CMD ["fastapi", "run", "app/app.py", "--host", "0.0.0.0", "--port", "80"]

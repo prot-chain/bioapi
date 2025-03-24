@@ -1,0 +1,5 @@
+# Install additional dependencies
+RUN pip install pyyaml
+
+# Create necessary directories
+RUN mkdir -p /app/data/templates /app/data/workflows /app/data/workflow_results /app/data/workflow_state /app/bin

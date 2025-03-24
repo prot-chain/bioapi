@@ -1,0 +1,41 @@
+name: RNA-Seq Analysis
+description: RNA-Seq analysis workflow for differential gene expression
+version: 1.0.0
+
+parameters:
+  sample_name:
+    type: string
+    description: Name of the sample
+    default: "test-sample"
+
+containers:
+  ubuntu:
+    image: ubuntu:20.04
+  fastqc:
+    image: biocontainers/fastqc:v0.11.9_cv8
+
+steps:
+  - id: setup
+    process: "mkdir -p /workspace/input /workspace/qc /workspace/output && echo 'Setting up workspace for ${sample_name}' > /workspace/input/sample.txt"
+    container: ubuntu
+    outputs:
+      - path: /workspace/input
+        as: input_files
+
+  - id: quality_control
+    process: "echo 'Running QC on ${sample_name}' && cat /workspace/input/sample.txt > /workspace/qc/qc_report.txt && echo 'Quality control completed' >> /workspace/qc/qc_report.txt"
+    container: ubuntu
+    depends_on:
+      - setup
+    outputs:
+      - path: /workspace/qc
+        as: qc_reports
+
+  - id: analysis
+    process: "cat /workspace/qc/qc_report.txt > /workspace/output/results.txt && echo 'Analysis completed for ${sample_name}' >> /workspace/output/results.txt"
+    container: ubuntu
+    depends_on:
+      - quality_control
+    outputs:
+      - path: /workspace/output
+        as: results

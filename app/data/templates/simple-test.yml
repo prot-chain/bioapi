@@ -1,0 +1,21 @@
+name: Simple Test
+description: A simple test workflow
+version: 1.0.0
+
+parameters:
+  message:
+    type: string
+    description: Message to print
+    default: "Hello, World!"
+
+containers:
+  ubuntu:
+    image: ubuntu:20.04
+
+steps:
+  - id: hello
+    process: "echo '${parameters.message}' > /workspace/output.txt && cat /workspace/output.txt"
+    container: ubuntu
+    outputs:
+      - path: /workspace
+        as: output

@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
+import os
 
 
 class Config(BaseSettings):
@@ -13,3 +14,7 @@ class Config(BaseSettings):
 @lru_cache
 def get_config() -> Config:
     return Config()
+
+# Add these settings to your existing config file
+WORKFLOW_BINARY_PATH = os.getenv("WORKFLOW_BINARY_PATH", "/app/bin/protchainworkflow")
+DATA_DIR = os.getenv("DATA_DIR", "/app/data")

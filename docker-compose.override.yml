@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  bioapi:
+    volumes:
+      - ./templates:/app/data/templates
+      - ../protchain/bin/protchainworkflow:/app/bin/protchainworkflow
