@@ -4,8 +4,10 @@ import os
 
 
 class Config(BaseSettings):
-
     redis_url: str = ''
+    workflow_binary_path: str = os.getenv("WORKFLOW_BINARY_PATH", "/app/bin/protchainworkflow")
+    data_dir: str = os.getenv("DATA_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data"))
+    upload_dir: str = os.getenv("UPLOAD_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "..", "uploads"))
 
     model_config = SettingsConfigDict(env_file='.env')
 
@@ -15,6 +17,5 @@ class Config(BaseSettings):
 def get_config() -> Config:
     return Config()
 
-# Add these settings to your existing config file
-WORKFLOW_BINARY_PATH = os.getenv("WORKFLOW_BINARY_PATH", "/app/bin/protchainworkflow")
-DATA_DIR = os.getenv("DATA_DIR", "/app/data")
+# Create a global settings instance
+settings = get_config()

@@ -4,8 +4,8 @@ from typing import Annotated
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from core.config import Config, get_config
-from api.v1 import router as v1_router
+from app.core.config import Config, get_config
+from app.api.v1 import router as v1_router
 
 
 @asynccontextmanager
@@ -17,6 +17,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="BioAPI service",
+    description="A blockchain-powered platform for protein analysis and AI-driven drug discovery",
     lifespan=lifespan,
     version="1.0"
 )

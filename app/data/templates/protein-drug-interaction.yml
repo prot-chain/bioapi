@@ -1,0 +1,131 @@
+{
+    "id": "protein-drug-interaction",
+    "name": "Protein-Drug Interaction Prediction",
+    "description": "Predict interactions between a protein and drug compounds",
+    "version": "1.0.0",
+    "parameters_schema": {
+      "protein_id": {
+        "type": "string",
+        "description": "PDB or UniProt ID of the protein",
+        "default": ""
+      },
+      "protein_name": {
+        "type": "string",
+        "description": "Name of the protein (auto-populated from protein_id)",
+        "default": ""
+      },
+      "protein_ipfs_cid": {
+        "type": "string",
+        "description": "IPFS CID of the protein data (auto-populated from protein_id)",
+        "default": ""
+      },
+      "protein_sequence": {
+        "type": "string",
+        "description": "Amino acid sequence of the protein (auto-populated from protein_id)",
+        "default": ""
+      },
+      "pdb_link": {
+        "type": "string",
+        "description": "Link to the PDB file (auto-populated from protein_id)",
+        "default": ""
+      },
+      "compound_library": {
+        "type": "string",
+        "description": "IPFS CID of the compound library",
+        "default": ""
+      },
+      "model_type": {
+        "type": "string",
+        "description": "Type of model to use for prediction",
+        "enum": ["transformer", "cnn", "graph-neural-network"],
+        "default": "graph-neural-network"
+      },
+      "confidence_threshold": {
+        "type": "number",
+        "description": "Confidence threshold for predictions",
+        "default": 0.8
+      },
+      "binding_site": {
+        "type": "string",
+        "description": "Binding site residues (comma-separated)",
+        "default": ""
+      },
+      "target_property": {
+        "type": "string",
+        "description": "Target property to optimize",
+        "enum": ["binding_affinity", "selectivity", "toxicity"],
+        "default": "binding_affinity"
+      }
+    },
+    "command": "python scripts/predict.py --input_file ${protein_ipfs_cid} --compound_library ${compound_library} --model_type ${model_type} --confidence_threshold ${confidence_threshold} --binding_site ${binding_site} --target_property ${target_property} --output_dir /data/results",
+    "container_image": "protchain/bioapi:latest",
+    "inputs": [
+      {
+        "name": "protein_id",
+        "description": "PDB or UniProt ID of the protein",
+        "type": "string"
+      },
+      {
+        "name": "protein_name",
+        "description": "Name of the protein (auto-populated from protein_id)",
+        "type": "string"
+      },
+      {
+        "name": "protein_ipfs_cid",
+        "description": "IPFS CID of the protein data (auto-populated from protein_id)",
+        "type": "string"
+      },
+      {
+        "name": "protein_sequence",
+        "description": "Amino acid sequence of the protein (auto-populated from protein_id)",
+        "type": "string"
+      },
+      {
+        "name": "pdb_link",
+        "description": "Link to the PDB file (auto-populated from protein_id)",
+        "type": "string"
+      },
+      {
+        "name": "compound_library",
+        "description": "IPFS CID of the compound library",
+        "type": "string"
+      },
+      {
+        "name": "model_type",
+        "description": "Type of model to use for prediction",
+        "type": "string"
+      },
+      {
+        "name": "confidence_threshold",
+        "description": "Confidence threshold for predictions",
+        "type": "number"
+      },
+      {
+        "name": "binding_site",
+        "description": "Binding site residues (comma-separated)",
+        "type": "string"
+      },
+      {
+        "name": "target_property",
+        "description": "Target property to optimize",
+        "type": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "results",
+        "description": "Prediction results",
+        "path": "results/predictions.json"
+      },
+      {
+        "name": "log",
+        "description": "Execution log",
+        "path": "results/stdout.txt"
+      }
+    ],
+    "resources": {
+      "cpu": "2",
+      "memory": "4Gi"
+    },
+    "timeout": 7200
+  } 

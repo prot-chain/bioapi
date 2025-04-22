@@ -1,0 +1,15 @@
+name: Default Workflow
+description: Basic protein structure analysis workflow
+parameters:
+  thorough_mode:
+    type: boolean
+    label: Thorough Mode
+    default: true
+    description: Run full structure analysis
+steps:
+  - name: Structure Preparation
+    description: Load and prepare protein structure
+  - name: Molecular Analysis
+    description: Calculate molecular descriptors and properties
+  - name: Results Export
+    description: Export analysis results

@@ -1,0 +1,22 @@
+name: Amyloid Prediction
+description: Predict amyloid-forming regions in proteins
+parameters:
+  max_compounds:
+    type: number
+    label: Max Compounds
+    default: 1000
+    description: Maximum number of compounds to screen
+  thorough_mode:
+    type: boolean
+    label: Thorough Mode
+    default: true
+    description: Run full molecular dynamics simulation
+steps:
+  - name: Sequence Analysis
+    description: Analyze protein sequence for amyloid-prone regions
+  - name: Structure Prediction
+    description: Predict 3D structure of amyloid regions
+  - name: Binding Site Analysis
+    description: Identify potential binding sites
+  - name: Drug Screening
+    description: Screen compound library for potential inhibitors

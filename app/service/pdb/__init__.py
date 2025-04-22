@@ -1,1 +1,1 @@
-from .fetch import PDBFetchService
+from app.service.pdb.fetch import PDBFetchService

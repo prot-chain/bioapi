@@ -1,0 +1,131 @@
+name: Protein-Drug Interaction Prediction
+description: Predicts potential drug candidates for protein targets using AI/ML models and blockchain-based validation
+
+parameters:
+  protein:
+    type: object
+    description: Protein target specification
+    required: true
+    properties:
+      type:
+        type: string
+        description: Source type of protein data
+        enum: [pdb_id, sequence, ipfs_hash]
+        default: pdb_id
+      value:
+        type: string
+        description: PDB ID, sequence, or IPFS hash
+        required: true
+      chain:
+        type: string
+        description: Chain ID for multi-chain structures
+        required: false
+      binding_site:
+        type: string
+        description: Optional binding site residues (comma-separated)
+        required: false
+    
+  compound_library:
+    type: object
+    description: Compound library specification
+    required: true
+    properties:
+      type:
+        type: string
+        description: Source type of compound data
+        enum: [file, ipfs_hash, database]
+        default: file
+      value:
+        type: string
+        description: File path, IPFS hash, or database identifier
+        required: true
+      format:
+        type: string
+        description: File format if type is file
+        enum: [sdf, mol, smiles]
+        required: false
+    
+  model_type:
+    type: string
+    description: Type of AI model to use
+    default: transformer
+    enum: [transformer, cnn, graph-neural-network]
+    
+  confidence_threshold:
+    type: number
+    description: Minimum confidence score for predictions
+    default: 0.8
+    minimum: 0.0
+    maximum: 1.0
+    
+  target_property:
+    type: string
+    description: Target property to optimize
+    default: binding_affinity
+    enum: [binding_affinity, selectivity, solubility, stability]
+
+steps:
+  - name: data-preparation
+    description: Prepare protein and compound data for analysis
+    script: scripts/prepare_data.py
+    inputs:
+      - protein
+      - compound_library
+    outputs:
+      - processed_data
+
+  - name: feature-extraction
+    description: Extract molecular features and structural properties
+    script: scripts/extract_features.py
+    inputs:
+      - processed_data
+    outputs:
+      - feature_vectors
+      
+  - name: model-prediction
+    description: Run AI model predictions
+    script: scripts/predict.py
+    inputs:
+      - feature_vectors
+      - model_type
+      - confidence_threshold
+      - target_property
+    outputs:
+      - predictions
+      
+  - name: result-validation
+    description: Validate and store results on blockchain
+    script: scripts/validate_results.py
+    inputs:
+      - predictions
+    outputs:
+      - validated_results
+      
+  - name: report-generation
+    description: Generate detailed analysis report
+    script: scripts/generate_report.py
+    inputs:
+      - validated_results
+    outputs:
+      - final_report
+
+outputs:
+  predictions:
+    description: Predicted drug candidates with scores
+    type: file
+    format: json
+    
+  molecular_interactions:
+    description: Detailed molecular interaction analysis
+    type: file
+    format: json
+    
+  visualization:
+    description: 3D visualization data of protein-compound interactions
+    type: file
+    format: pdb
+    
+  report:
+    description: Comprehensive analysis report
+    type: file
+    format: html 

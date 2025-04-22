@@ -1,7 +1,7 @@
-from service.utils import pdb_file_download_link
+from app.service.utils import pdb_file_download_link
 from typing import Dict
 from httpx import AsyncClient
-from schema import (
+from app.schema import (
     ProteinData, Organism, EntryAudit, DiseaseAssociation, Isoform, Feature
 )
 

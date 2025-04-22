@@ -1,1 +1,1 @@
-from .fetch import UniprotFetchService
+from app.service.uniprot.fetch import UniprotFetchService

@@ -22,6 +22,7 @@ class WorkflowStep(BaseModel):
     end_time: Optional[datetime] = None
     output: Optional[str] = None
     error: Optional[str] = None
+    blockchain_tx: Optional[str] = None  # Add blockchain transaction ID
 
 class WorkflowSubmissionSchema(BaseModel):
     name: str
@@ -38,9 +39,15 @@ class WorkflowExecutionSchema(BaseModel):
     end_time: Optional[datetime] = None
     steps: List[WorkflowStep] = []
     results_url: Optional[str] = None
+    blockchain_tx: Optional[str] = None  # Add blockchain transaction ID
 
 class WorkflowTemplateSchema(BaseModel):
     id: str
     name: str
     description: str
     parameters_schema: Dict[str, Any] = {}
+
+class WorkflowVerificationSchema(BaseModel):
+    valid: bool
+    reason: str
+    hash: Optional[str] = None

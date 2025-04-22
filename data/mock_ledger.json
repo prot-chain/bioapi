@@ -1,0 +1,2664 @@
+{
+  "transactions": [
+    {
+      "tx_id": "101a1034289060f9dd926d54771172dcaf39e9124b70d5ac1748885b632c1aac",
+      "timestamp": 1744270907.3519752,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "d6e850e8-ae61-4b6f-b48a-1a71eab390fe",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744270907,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d2ab07aa5c53308d56276c73b88e4967694167351e1d04c036d9a92e1addaceb",
+      "timestamp": 1744270907.3909044,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "d6e850e8-ae61-4b6f-b48a-1a71eab390fe",
+        "status": "COMPLETED",
+        "timestamp": 1744270907,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "1f293dbef06fec79e87648565afa27901ba1342d9d7e4995f677e44de42f1cbf",
+      "timestamp": 1744271275.0357792,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "59f8c596-7f44-4cfd-a3e6-5f30f8009657",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744271275,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "dbbe022d1e9955cb96f7177a0049a8c83bb42d61bf56682c163ad286136e1a9d",
+      "timestamp": 1744271275.072364,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "59f8c596-7f44-4cfd-a3e6-5f30f8009657",
+        "status": "COMPLETED",
+        "timestamp": 1744271275,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "1be19db69a0bda1a0e5c16028d8ddf5626576ef55c4a079f2c36d3b7df6b76a5",
+      "timestamp": 1744271690.3817723,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "5254d37e-38d3-4c14-9f51-81d38b257823",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744271690,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "0b7ad7bfa297fd629e49929fd62ac6b89d239920d71972f35306916954956e37",
+      "timestamp": 1744271690.4133804,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "5254d37e-38d3-4c14-9f51-81d38b257823",
+        "status": "COMPLETED",
+        "timestamp": 1744271690,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "8ea657379c62ad90155aba993e617917017291b2eab93bcf9ec4d650ed81f4bd",
+      "timestamp": 1744272394.9447298,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "96ddcba5-135f-430f-a161-3d8c7e753780",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744272394,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a2d8d855006a9dee5762171e87bc8e18127ed97487eaf662ef22f89fdcc2f825",
+      "timestamp": 1744272394.9663422,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "96ddcba5-135f-430f-a161-3d8c7e753780",
+        "status": "COMPLETED",
+        "timestamp": 1744272394,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b1f4c629bc6f3b53e42b777cc1d8fb7e75ecbf7abc98cdff962942b23c1f4161",
+      "timestamp": 1744273214.5289128,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "1f46d0e6-72d7-49d8-9c4d-dc712b234b89",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744273214,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "5c44b51e87074c0807d560e3560dc993257381b6e6d1661ae663708c40954386",
+      "timestamp": 1744273214.5728114,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "1f46d0e6-72d7-49d8-9c4d-dc712b234b89",
+        "status": "COMPLETED",
+        "timestamp": 1744273214,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "17efe52024a0c6c812f6c9223dd981de4024841c1d28b2c98c3dcc991223108a",
+      "timestamp": 1744283179.9512084,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a1b00085-8e8f-4f0d-8105-3572d376fbf1",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744283179,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "8255d5501767a0e87e5cf6001feba2d610946094240a6fae9106b821815ef376",
+      "timestamp": 1744283180.0000644,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a1b00085-8e8f-4f0d-8105-3572d376fbf1",
+        "status": "COMPLETED",
+        "timestamp": 1744283179,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "1196d8ba83ef7bf7d0e4f6424930f639c04b72e0dbfadd56659e7a3912ce2002",
+      "timestamp": 1744283629.0551898,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "7397147d-f684-4a24-bd63-638c208b6d9d",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744283629,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "c4c154e73265c70c6991f61cce3fb6a3d48ebf2297a719f92d0e1b5d18ba8ee7",
+      "timestamp": 1744283629.0886288,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "7397147d-f684-4a24-bd63-638c208b6d9d",
+        "status": "COMPLETED",
+        "timestamp": 1744283629,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "c216829f48823502779a6b0a38ee69e5586aadbac9a2d84112538e61eb71f3e2",
+      "timestamp": 1744283849.4003496,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "bcb173c9-ad94-46f6-a7d1-db2b76a8f2a6",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744283849,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "ccd4a16c0ce759cb13532f3fb18568d34e0b88784cf23f74c689de5e2ca0b5a7",
+      "timestamp": 1744283849.4335725,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "bcb173c9-ad94-46f6-a7d1-db2b76a8f2a6",
+        "status": "COMPLETED",
+        "timestamp": 1744283849,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "5853888b839e0d9cc4aa02070f4725c6ab276031fab57c5402608c0f4b14749f",
+      "timestamp": 1744284146.0553036,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "90a03379-b7af-4a36-bfe4-955b7544c60d",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744284146,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "e11d39c21e860507f735a3b7d41e5a3e7602d5ba86e896044e03203f70d291f1",
+      "timestamp": 1744284146.07849,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "90a03379-b7af-4a36-bfe4-955b7544c60d",
+        "status": "COMPLETED",
+        "timestamp": 1744284146,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "ae02e367ba83c3280fddf517657f9cfe824632262f0b92327b732ce5c2461579",
+      "timestamp": 1744284641.4825249,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "6c53e36f-aceb-49c5-b0c4-ec3fbf886596",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744284641,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "36762936e77dd6d81f25b122bc77b5c9104e7b30210744f440a558cdcdb58c52",
+      "timestamp": 1744284641.5126219,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "6c53e36f-aceb-49c5-b0c4-ec3fbf886596",
+        "status": "COMPLETED",
+        "timestamp": 1744284641,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "6335765f924807a2f3af709c5991bc806b24e7ef3a0844affd728d998582eda7",
+      "timestamp": 1744285819.6434815,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "c945e33b-cc76-460f-bdbb-a99b96329f66",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744285819,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "f09938f8e03d2c0f37dfa5282d411f63fc8b088edd645a81b3e2f86c1081777e",
+      "timestamp": 1744285819.6700296,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "c945e33b-cc76-460f-bdbb-a99b96329f66",
+        "status": "COMPLETED",
+        "timestamp": 1744285819,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "94d1bea6aab9733fdfbe947143b44af91b2c5b5d752beaf73cb62508034b6d87",
+      "timestamp": 1744346812.9916847,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "9678d0ce-353d-43f7-b96c-fe9786e5e62c",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744346812,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "189ed779e9759641cd6416a8821cfc1334dc9d60dd8c53a7796e459c4f17ecad",
+      "timestamp": 1744346813.0350623,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "9678d0ce-353d-43f7-b96c-fe9786e5e62c",
+        "status": "COMPLETED",
+        "timestamp": 1744346812,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "6406e74975fdcb28bdcaf11f80c2c3c9a01012cf3bd2932b202317ab08fc31fa",
+      "timestamp": 1744347241.447884,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "11cf3798-cd2b-468e-b349-56abf572552c",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744347241,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "536cc6a43222a5b58e3f004a779cc9b293fb063b8fd6f1671c83af3a39fe0eac",
+      "timestamp": 1744347241.5231047,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "11cf3798-cd2b-468e-b349-56abf572552c",
+        "status": "COMPLETED",
+        "timestamp": 1744347241,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b7f9fdb7f45d6b061ab1b1b1687e0babc1e06593b253a82ae319d72ed03190ff",
+      "timestamp": 1744347319.575367,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "9f38fd28-efce-4967-8c0c-b55a1807033f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744347319,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "542730e09b18232bdfc26fb42cf79173d14e9701eb6f2c62a0101c85561f6b69",
+      "timestamp": 1744347319.6194947,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "9f38fd28-efce-4967-8c0c-b55a1807033f",
+        "status": "COMPLETED",
+        "timestamp": 1744347319,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "1b283ab60902bc5c846ad71dfaec50ff56ab8c8ba1982f3e9ec81615f317d089",
+      "timestamp": 1744347953.7233922,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "ee79973b-f7f4-44bd-8dd2-ac1551f00648",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744347953,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "f1342803754204f0e2897b47463db17ddea47df150eef29c72ce1731557395c4",
+      "timestamp": 1744347953.748828,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "ee79973b-f7f4-44bd-8dd2-ac1551f00648",
+        "status": "COMPLETED",
+        "timestamp": 1744347953,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "269db601943ed9ee22480599371c171ab73568e10ab745e640f3ec9487c8dcc7",
+      "timestamp": 1744348702.8896844,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "524ad486-b5ed-4b3f-920c-97c54aea4cb2",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744348702,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "cbe9b0392ec8b8a40d08b32662a58a66fd1af5f0049bd89495993f54fde38f13",
+      "timestamp": 1744348702.9352462,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "524ad486-b5ed-4b3f-920c-97c54aea4cb2",
+        "status": "COMPLETED",
+        "timestamp": 1744348702,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "8409b626de48ed56d0276baf9c118f798b376a69a372ae6c9798b753799860d2",
+      "timestamp": 1744349058.7710624,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "84e12dba-05ca-4a04-8e02-1025182607ce",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744349058,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "0db13fe31f82e4f6246508a18dbd278c5b4e24b7d310f1c336dcf166d75b0b40",
+      "timestamp": 1744349058.797651,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "84e12dba-05ca-4a04-8e02-1025182607ce",
+        "status": "COMPLETED",
+        "timestamp": 1744349058,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "eb56209c078ca190e8c6bd77235ee905b8cbd3022dd2285ef0371ec62d4cc867",
+      "timestamp": 1744350049.9859622,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "fc52cffa-f6c8-416a-b3f4-dd72926dccf9",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744350049,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "c6986392a2f9cd85cf796fd5937e159c39f427c90e500a6897954e6412e98cf3",
+      "timestamp": 1744350050.0332391,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "fc52cffa-f6c8-416a-b3f4-dd72926dccf9",
+        "status": "COMPLETED",
+        "timestamp": 1744350049,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "2bb8a6a53551a285005a7826423813a57db0247f99ae701947bb77c101e03df2",
+      "timestamp": 1744350635.9153552,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "e9cf2c18-ba2b-42bf-84fc-8ae900c7e530",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744350635,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "4afd5fdb449a613600db9cd6f3e85b4503a8a09bef065a3875e5fd28efb696f8",
+      "timestamp": 1744350635.9923327,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "e9cf2c18-ba2b-42bf-84fc-8ae900c7e530",
+        "status": "COMPLETED",
+        "timestamp": 1744350635,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "6dbcb9b8305cb1d663edcdb19ea91ea7ed46b38c851e38abe392c9874cdb216c",
+      "timestamp": 1744458129.5109062,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "f9b85a5b-b2b1-4a13-86fa-22b6d71db388",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744458129,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "e482c3a284b9c421cb9b751dbe68a6ad5419ec27e7dcfb4a33e85c4d295bf20d",
+      "timestamp": 1744458129.539478,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "f9b85a5b-b2b1-4a13-86fa-22b6d71db388",
+        "status": "COMPLETED",
+        "timestamp": 1744458129,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "5d2e47129dc74a38f4eb442745c45e18ea1fac7691f99e9dd90489df58e38405",
+      "timestamp": 1744466568.9016294,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "efecb22e-671a-45fd-b9fa-cdd5db460c57",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744466568,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "446863deecd6ff04e3cb8663c17e33651ea4c8beee67c16f5639b48e869da08b",
+      "timestamp": 1744466568.937668,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "efecb22e-671a-45fd-b9fa-cdd5db460c57",
+        "status": "COMPLETED",
+        "timestamp": 1744466568,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "31a89bb5b76d0de4d55e328d7e1f5b26be9c822032f37eb177c39c215ae83955",
+      "timestamp": 1744467118.3329244,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "6c067fe1-c535-42b9-8d0c-6634e62fda70",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744467118,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a796c13ac113bf883c5826d611e8ab02f6b982adc13d25e1e396d6a430159255",
+      "timestamp": 1744467118.3678455,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "6c067fe1-c535-42b9-8d0c-6634e62fda70",
+        "status": "COMPLETED",
+        "timestamp": 1744467118,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "c1150d8aafd086a5556cf1666efbf03e25cdea85601330b893ac91437aec1038",
+      "timestamp": 1744467729.5643892,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "d2743ec8-22d8-44f0-836b-7e35e5c2e386",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744467729,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "661f50d66f3338b4980e2ff4d5ed80ca9a22e2d63e64b27a57a820a2d440afc1",
+      "timestamp": 1744467729.6012783,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "d2743ec8-22d8-44f0-836b-7e35e5c2e386",
+        "status": "COMPLETED",
+        "timestamp": 1744467729,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "89fa2bbb151b3fc822143f45556b718d7e0976943fdaddde9c7fb0afce2fb92b",
+      "timestamp": 1744468219.7505167,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "79cecf13-256a-4cf1-8ca3-54a79df9b5f5",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744468219,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "621d18943ce547ac28e588649e9bd7d790bc877c7392afe88aa8186fa0a7f016",
+      "timestamp": 1744468219.7766771,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "79cecf13-256a-4cf1-8ca3-54a79df9b5f5",
+        "status": "COMPLETED",
+        "timestamp": 1744468219,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "33ddb340bfa30827c6f6f211f2b16259a3e9c603a05f7b76ea9eb0cd71a84a33",
+      "timestamp": 1744468797.439427,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "df6e1958-0c46-412e-9327-d910520a6428",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744468797,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "0e2eeeaba7f59505761f52b585f32dc8137357237885044289cfd1db2d984495",
+      "timestamp": 1744468797.480064,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "df6e1958-0c46-412e-9327-d910520a6428",
+        "status": "COMPLETED",
+        "timestamp": 1744468797,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "862ef745905ac6e29f00f66b40e0162fde89855f347054c7cb561ec1cb9e37cb",
+      "timestamp": 1744469376.626549,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "5a406920-1945-4a4b-a7c0-884ae20e2f78",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744469376,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "68819ad3b213528e1e48d7f0586c6d34d7f2da6a7e3040dbd1bd4c2366570322",
+      "timestamp": 1744469376.7060056,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "5a406920-1945-4a4b-a7c0-884ae20e2f78",
+        "status": "COMPLETED",
+        "timestamp": 1744469376,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "1c73e04d12bbcc121e79b88bf41d7cffead865ee758c0646df858eef9234fea3",
+      "timestamp": 1744506344.194798,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "edeabd36-1194-4b86-adac-44e34ec96840",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744506344,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "4a4d9f7cf377f059123888674624cb7818efb8f36e58a5a40b583b7e57827550",
+      "timestamp": 1744506344.2490563,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "edeabd36-1194-4b86-adac-44e34ec96840",
+        "status": "COMPLETED",
+        "timestamp": 1744506344,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "09cb050cd04c8d0eb5f2d2c042f79fac34543fca617f7449950832ccb3cb3e10",
+      "timestamp": 1744507362.2614589,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "9ec907f3-0144-465d-ae5e-1a8f7e062501",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744507362,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "3a2f66a784aacaed84f4b2a0e476baff5b17135961ba5e7a87ce88b6c34e53dc",
+      "timestamp": 1744507362.2976465,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "9ec907f3-0144-465d-ae5e-1a8f7e062501",
+        "status": "COMPLETED",
+        "timestamp": 1744507362,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "c3e88bdda9dfdf03738382d86c4f9b8e71998fd099a182c0181fb964252cf74a",
+      "timestamp": 1744507940.3156805,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "45f595ab-eb35-47f9-9bc9-be47bc88af09",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744507940,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "9c371ca2180d00d610575edf5e61398ba98c6bd85ce802b785ed435196dea45c",
+      "timestamp": 1744507940.3614802,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "45f595ab-eb35-47f9-9bc9-be47bc88af09",
+        "status": "COMPLETED",
+        "timestamp": 1744507940,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "76689c6b9b223c85e3a7c7c69564841b2675d5826bff21de729a65978657b845",
+      "timestamp": 1744508837.0849624,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "5e8a67c4-d64d-4bb0-84df-e8561dc4398f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744508837,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "ab15d55ac7e561e243e413d7f38dc942e686a5a3810170942dcd5fa552e7e51f",
+      "timestamp": 1744508837.131856,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "5e8a67c4-d64d-4bb0-84df-e8561dc4398f",
+        "status": "COMPLETED",
+        "timestamp": 1744508837,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "8aecb5432ffb4562e66a0af9ea2b751023ba71b3eb38617174c9309f9a4dd077",
+      "timestamp": 1744510441.4201958,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a411efc6-00a4-4df0-b05f-12e843ab97cd",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744510441,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "55a26254e5cd46212fb8c86f6f9f770eb32edf80a8e5090eed1e40064044bf36",
+      "timestamp": 1744510441.4789476,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a411efc6-00a4-4df0-b05f-12e843ab97cd",
+        "status": "COMPLETED",
+        "timestamp": 1744510441,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "e9d720de3a0f28f7c6ed4a39d3f48da6a821ec4f46b262a0e0579cbe7c26d463",
+      "timestamp": 1744510963.1078618,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "08b78aa6-6230-48f3-ba04-a1959ecca9f6",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744510963,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6604e3cfc88f30965ff3c0102c9cfb635139c24df28b0c365822147db2f8179a",
+      "timestamp": 1744510963.140154,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "08b78aa6-6230-48f3-ba04-a1959ecca9f6",
+        "status": "COMPLETED",
+        "timestamp": 1744510963,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "91070b5986d5ba301b01d306d0f6ae8ee486a2cb5de2cb0910ca66b3ccd7dffd",
+      "timestamp": 1744511466.8375294,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "3e9fd3a7-d2de-47a0-ab3d-d1fc12a2524e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744511466,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "fcfb69dddfa812d440876b96632208b127b420ed672e5916b9ce2d4ed26d240c",
+      "timestamp": 1744511466.895141,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "3e9fd3a7-d2de-47a0-ab3d-d1fc12a2524e",
+        "status": "COMPLETED",
+        "timestamp": 1744511466,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "bf0ba283311f46ffce3370949615ea232c9f65f786b55aea2e15420248a391d8",
+      "timestamp": 1744512144.2325776,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "c8ccb0f9-f2a3-4260-8940-162e0ce1573e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744512144,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6cca0614b5fcca22d475c8bab6722b878a801fc994fa266273feb5b4f641f7ba",
+      "timestamp": 1744512144.3485622,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "c8ccb0f9-f2a3-4260-8940-162e0ce1573e",
+        "status": "COMPLETED",
+        "timestamp": 1744512144,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "dbe543ebfa642ec634141b080ae5c65c6dacb27e73a8c9891fa35f4fc255cbeb",
+      "timestamp": 1744512781.3763738,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "1913eb4f-08b5-4d1e-a21b-811f5db43ef8",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744512781,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "1ddca522e32ea5724c74f4ce28893a898846dbf1f887f7d40f6736db366e50db",
+      "timestamp": 1744512781.5296218,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "1913eb4f-08b5-4d1e-a21b-811f5db43ef8",
+        "status": "COMPLETED",
+        "timestamp": 1744512781,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "d7994c7e5ea76e4cf2e90943cc00f03e70f18ce2849ee9c3575f76a899ad2e04",
+      "timestamp": 1744513964.5364285,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "4f54cfbb-6c4d-4bf9-b38a-924f571cfe58",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744513964,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "deda2119cfdc30a4e50e180bff160857eb3542237f5b598e87cc70f8c7063e48",
+      "timestamp": 1744513964.5885427,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "4f54cfbb-6c4d-4bf9-b38a-924f571cfe58",
+        "status": "COMPLETED",
+        "timestamp": 1744513964,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "efffabe835967021183a13d41f52cbac81b2b73efa01b57691f82b2e823c14ba",
+      "timestamp": 1744514589.1249025,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "44beb73b-52dd-4c1d-876a-1e4cd293d72d",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744514589,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a9be7ab4e7f94cf85b841cf103b05226779c0fe7193a884e4e5c0763a00fcb99",
+      "timestamp": 1744514589.1587412,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "44beb73b-52dd-4c1d-876a-1e4cd293d72d",
+        "status": "COMPLETED",
+        "timestamp": 1744514589,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "eba80dc896ff478180a1d5292bdfd6969cc3fe852f0db802eb0820d7ee7c45d1",
+      "timestamp": 1744515121.9397328,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "ba7ead4c-37dc-416a-aa8c-daf181db6517",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744515121,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "42520593d28ac8b0afc6fc57b51bb89574556116ac335fcfb25a2c696a363ac4",
+      "timestamp": 1744515122.009417,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "ba7ead4c-37dc-416a-aa8c-daf181db6517",
+        "status": "COMPLETED",
+        "timestamp": 1744515121,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "f8061620b55c1ab8b2cb483ad9b05daee3712e66390e6d4cde410789eb68252d",
+      "timestamp": 1744515691.8633492,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "6d08fa8c-ba7b-45b5-a3a3-f1f57489db8b",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744515691,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "783d7325232b6283da2734775f653bd92ff9d28d5180ad9e7e61d2c353ca351a",
+      "timestamp": 1744515691.8936968,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "6d08fa8c-ba7b-45b5-a3a3-f1f57489db8b",
+        "status": "COMPLETED",
+        "timestamp": 1744515691,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "e37acd1e1af2de0dc0fbcf8e6319d31659ca5b121731164ecd79e0ce292f8175",
+      "timestamp": 1744516277.5817096,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "52b104f6-60c6-4bdf-9dc3-64a7442d5efd",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744516277,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "9f763b3145be46ecc5800bc14c948145a1d9e98be942ea2e3e87ec261955454c",
+      "timestamp": 1744516277.624217,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "52b104f6-60c6-4bdf-9dc3-64a7442d5efd",
+        "status": "COMPLETED",
+        "timestamp": 1744516277,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "d4409b35b88201ebbfeeeeb3cbc5768190cc246ffa46173b495994bc5a54ec61",
+      "timestamp": 1744516759.6745708,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "7bf9d89a-10c2-4b0d-b499-fec113fc63a4",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744516759,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a517ce8f5e64ba5a53f409d1f35d3be6bf0c6ec06fbb676c10c18b64699e6a6a",
+      "timestamp": 1744516759.7210567,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "7bf9d89a-10c2-4b0d-b499-fec113fc63a4",
+        "status": "COMPLETED",
+        "timestamp": 1744516759,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "3a1efdd7e5b5d19e3f2a9ccbc441d6be612986579f3c304d5efd03edaa325cca",
+      "timestamp": 1744602810.7228634,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "699ec2f6-f16e-4cb7-b365-c9086235356a",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744602810,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "ed36c8769b5e11e2e9b6a0b93408d804a749f8e0348fdfc512480f095ee5febe",
+      "timestamp": 1744602810.7605176,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "699ec2f6-f16e-4cb7-b365-c9086235356a",
+        "status": "COMPLETED",
+        "timestamp": 1744602810,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "8c5b13954160ba8f031b17cff9c1fcb662664d9cf7abdca4559bbac9af41be23",
+      "timestamp": 1744604913.5636127,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "b8d9bedd-0d2b-43bc-a1c1-a0e67312cc7f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744604913,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "1d720a62c8c10aa2931fe704915b99df367a02d908ea6cda752c61a616ad4dec",
+      "timestamp": 1744604913.6059825,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "b8d9bedd-0d2b-43bc-a1c1-a0e67312cc7f",
+        "status": "COMPLETED",
+        "timestamp": 1744604913,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b6e8a15e4a4209e3aff6107037ff5abad67325b9191d590803a30bb7892e037e",
+      "timestamp": 1744605521.4017797,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "b1093595-d431-4471-9766-cba8b9c08195",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744605521,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "4944ec64a5857ca7230c8214c8d0d1eb340b398c2fb223431922e07bc1570e24",
+      "timestamp": 1744605521.4280198,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "b1093595-d431-4471-9766-cba8b9c08195",
+        "status": "COMPLETED",
+        "timestamp": 1744605521,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "e850fa02ac7df612c612d01772558bcd73fcdc7c4b381c7b498ad135e2b3e3e9",
+      "timestamp": 1744605657.2105274,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "90404d6a-c606-4f51-bd11-26ff1072b40e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744605657,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "fe11bb23714de36ee44387503e86522b48cfc0acaa9396412b0fd310fcca23f2",
+      "timestamp": 1744605657.2382026,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "90404d6a-c606-4f51-bd11-26ff1072b40e",
+        "status": "COMPLETED",
+        "timestamp": 1744605657,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "aba6f1bdb6561238ca4ac5a9d263582565e7509df8d6f5a71be9a07b0b5febb1",
+      "timestamp": 1744606083.024469,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "40111392-c1c6-4e54-8756-1cb3f9267e5c",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744606083,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d636dd43d20af9d0e7583f4ffc7d7f000b61d11da58223126e66db5f45413763",
+      "timestamp": 1744606083.0612035,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "40111392-c1c6-4e54-8756-1cb3f9267e5c",
+        "status": "COMPLETED",
+        "timestamp": 1744606083,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "af5e41c69eb2a1db4efd81e7dc1a6041b3d9aa209909f2cefbb750fa85b6b2e1",
+      "timestamp": 1744606460.1736536,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "16c115a4-1237-475b-b942-48f5f28c2661",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744606460,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6b6ff5f6671599705ed68459746c9f11ebe65a0e79307e74cd8538ae67b1ef2e",
+      "timestamp": 1744606460.2097318,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "16c115a4-1237-475b-b942-48f5f28c2661",
+        "status": "COMPLETED",
+        "timestamp": 1744606460,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b7472235d6f23645910d3d2ec6c10f169fe6d50f0026287882e38a4d89c3801f",
+      "timestamp": 1744607766.6157937,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "1ef85a71-fd01-4bdd-9d63-0eef5ba6dae4",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744607766,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "148649236f2d9e8826bbe68da6adb188082de587ae3f7feaf8f5dcf35a79e295",
+      "timestamp": 1744607766.6572168,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "1ef85a71-fd01-4bdd-9d63-0eef5ba6dae4",
+        "status": "COMPLETED",
+        "timestamp": 1744607766,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "075d0403741f1ee803cd033739686e09b6391c9469dba17fbada0ead5870349c",
+      "timestamp": 1744608908.9001818,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "8576dbcf-e7d3-4170-a2b3-ef787536cf0e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744608908,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "7b4adc2e9f62747463c0034fe000223ac2c99120ffb451fea489c0d249128ee8",
+      "timestamp": 1744608908.9283261,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "8576dbcf-e7d3-4170-a2b3-ef787536cf0e",
+        "status": "COMPLETED",
+        "timestamp": 1744608908,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "abc79f4e65a4bea3c129e13cad93c1115bc8a9a6973266ba9a4db6446763b5b3",
+      "timestamp": 1744610094.0395997,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "77327eee-450d-4911-ab27-255c7e17138e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744610094,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d89028f361f5bd5c04c7769be6e5b564c6998305a22fe4e7b26ca8862fdcf830",
+      "timestamp": 1744610094.0666804,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "77327eee-450d-4911-ab27-255c7e17138e",
+        "status": "COMPLETED",
+        "timestamp": 1744610094,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "19b50fc2c440fe43205a7c1e9f2963aff7d5703910ecd08d3159b1f53510d710",
+      "timestamp": 1744610356.0765924,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "e9b937b7-8d20-40f7-a5f6-30adbdc89287",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744610356,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "068f35960ecd2dfd1cb02b4bcbc495abd6ba8835accccaa4b1d01e5711d7bb5d",
+      "timestamp": 1744610356.14125,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "e9b937b7-8d20-40f7-a5f6-30adbdc89287",
+        "status": "COMPLETED",
+        "timestamp": 1744610356,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "d5ceac3c295670647318c0fe0eb97e999bdcd6732bd4757bf7647972c575cdb3",
+      "timestamp": 1744612045.9577537,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "7987bba3-8e07-4a9a-9ada-71660ba8db15",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744612045,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "42f7296917df545bfeee2c30ea4046e8d2a280ad2311026abd15e0a3f3eb7a64",
+      "timestamp": 1744612045.9870315,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "7987bba3-8e07-4a9a-9ada-71660ba8db15",
+        "status": "COMPLETED",
+        "timestamp": 1744612045,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "bbef1649306f9be086ff856ce74504bab29294e1d9d496cf9c16b91b6181e5b8",
+      "timestamp": 1744612868.9101028,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a3616303-83bb-455c-b05e-5920200cd839",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744612868,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "dccb121b7df21f32cc0b3f814817871fc115e2f513e2a5b80d547daf79e91d3c",
+      "timestamp": 1744612868.9505427,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a3616303-83bb-455c-b05e-5920200cd839",
+        "status": "COMPLETED",
+        "timestamp": 1744612868,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "321bc4a3bbd89879b22f6eac20c215a71f69fd15fa905878658f2248c5c98684",
+      "timestamp": 1744613521.4673185,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "d9d3c596-d0e0-4e29-91b4-13337550b84e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744613521,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "84c50828915f885115c817435466644fda954a5872d1c419fdc571f2155a8bec",
+      "timestamp": 1744613521.504635,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "d9d3c596-d0e0-4e29-91b4-13337550b84e",
+        "status": "COMPLETED",
+        "timestamp": 1744613521,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "276d1881c994f225a7e54d993ed24e0cfdc73d7c5c3ae04a0d72c45fa7486830",
+      "timestamp": 1744613997.498521,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a86d3b37-0da9-4ff2-af79-88e432ab9edc",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744613997,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6d8bcd3d2bf2ec8d0ceb06f95b371210e89ed36fe552ad9f00a7304832f13b0e",
+      "timestamp": 1744613997.535981,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a86d3b37-0da9-4ff2-af79-88e432ab9edc",
+        "status": "COMPLETED",
+        "timestamp": 1744613997,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "adc32b8bbc30cb785ce7cd8edec78c4f51ae73defd79fb37535bf8e04a3ec045",
+      "timestamp": 1744615887.3740978,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a525d30d-4c6f-4699-ad5c-6080cc3acadc",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744615887,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a87194801e7956d50343f11797ef2032056892088c59dd33ba02dceb97ff7f44",
+      "timestamp": 1744615887.401091,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a525d30d-4c6f-4699-ad5c-6080cc3acadc",
+        "status": "COMPLETED",
+        "timestamp": 1744615887,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "bdc75f3a4b6e8743d9c9d0e5c711c53b39647517aba51dc1a513f17a0003349f",
+      "timestamp": 1744616385.946139,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "19c008fa-b216-48b3-a5fa-8c1b25e7e420",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744616385,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "58c3314d40e39b0381fb26b1b137cf09f6b01ab3647de37fc0aa6ab52112a3a0",
+      "timestamp": 1744616385.990629,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "19c008fa-b216-48b3-a5fa-8c1b25e7e420",
+        "status": "COMPLETED",
+        "timestamp": 1744616385,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "eb4671ff2feea3a103f34abf7a80d136171693c097ffac595e7e24c047e98b05",
+      "timestamp": 1744617177.3151152,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "36138640-ee15-41a5-932d-2f428cb63191",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744617177,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6359f7f9391ffb5d445183837070923321bf7837aaf0c725d2a9cd41c4a467a2",
+      "timestamp": 1744617177.350487,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "36138640-ee15-41a5-932d-2f428cb63191",
+        "status": "COMPLETED",
+        "timestamp": 1744617177,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "9b0c7b1eb1435a60f0a441fd281ce5d28b3d55c5f9ce4a98fd8b535bec097362",
+      "timestamp": 1744619354.3233614,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "bfe08961-bee7-4683-b7f3-200c5bb8856f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744619354,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "876d3b52720bdb561ee1847c903ba7e1156d5275179e68aacca7dc5d15268c26",
+      "timestamp": 1744619354.354179,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "bfe08961-bee7-4683-b7f3-200c5bb8856f",
+        "status": "COMPLETED",
+        "timestamp": 1744619354,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "d7f2d7e1cef07d12290c9c350b08bc0f5cb28b5955208cd9c426103a68c12b24",
+      "timestamp": 1744696058.592083,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a3815f90-3fcc-4c4f-9ad2-600a70d09469",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744696058,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "eaa5315840a7a3ece359850a20bc0e2ac86b5b111c9f4a5dc99d1b64757004ec",
+      "timestamp": 1744696058.6446862,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a3815f90-3fcc-4c4f-9ad2-600a70d09469",
+        "status": "COMPLETED",
+        "timestamp": 1744696058,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "a5624e1ddfd486868656ea9f5c08b3030d6733a38ab933bceddf74e6573dfbf2",
+      "timestamp": 1744698466.6614187,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "942a61c1-b1d7-4394-8b06-0384b87105f2",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744698466,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "2aa8b6a1df4cd6549a61f98d77db6a9b5e1b003f6a8b4d8cfde64e43ea90a250",
+      "timestamp": 1744698466.7346957,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "942a61c1-b1d7-4394-8b06-0384b87105f2",
+        "status": "COMPLETED",
+        "timestamp": 1744698466,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "54c5dfe6b201e24bd04d92d5c1a2a005b06c51d9bd417a1f3175475a19ad0c12",
+      "timestamp": 1744698978.4809973,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "1e18a28d-66a2-4fc7-9f45-38d7b90fe4ec",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744698978,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d9d77826bd170b4f856d9d0a7ef326ae0664ffe32d67f5badaa44b9a006a5ca1",
+      "timestamp": 1744698978.522429,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "1e18a28d-66a2-4fc7-9f45-38d7b90fe4ec",
+        "status": "COMPLETED",
+        "timestamp": 1744698978,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "cf055dcbd76c9cc95f03ddd9f34210aae441e4e7c782e06480b16d3e2c7f28fb",
+      "timestamp": 1744699090.9897926,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "f338290e-5fd4-422c-b2a7-45cda4d3d459",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744699090,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "250cc79500380ec6ae0878820da760f4630cd1c58dfbb390ff7b13e7fb3e8a36",
+      "timestamp": 1744699091.0288591,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "f338290e-5fd4-422c-b2a7-45cda4d3d459",
+        "status": "COMPLETED",
+        "timestamp": 1744699090,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "7de3e08b1af1347bd1821e8364df16634c6db4b5e78f7d7ef2638a488b98b900",
+      "timestamp": 1744703909.7594001,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "d03b2b6e-b4ac-43ce-8f6d-05444d4dbfb9",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744703909,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "41a9b720f127f30875eb81ea9b84609a31182ede1aa9d6c6eb2fb9d140dd33b9",
+      "timestamp": 1744703909.7974896,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "d03b2b6e-b4ac-43ce-8f6d-05444d4dbfb9",
+        "status": "COMPLETED",
+        "timestamp": 1744703909,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "4dbbe877301244ab885c52b9a924d66dc54919251aa11ed1e3fbb75c36c7ea10",
+      "timestamp": 1744716309.6488075,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "393942bc-8a0f-4d4e-811d-8570d8418f16",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744716309,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "51c22ee1a7c19ca2860d19dac1a1bff415ad5c18909141482e9bcadee379399c",
+      "timestamp": 1744716309.7309382,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "393942bc-8a0f-4d4e-811d-8570d8418f16",
+        "status": "COMPLETED",
+        "timestamp": 1744716309,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "a92d6b849094c23e3ef888a8ce7c160b5f8b818c23a4646a3ae6be9d194e2266",
+      "timestamp": 1744719286.5793679,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "06efa65c-0470-461f-a8f3-af0d7be9d7ff",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744719286,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "c71e3edac171c41803fb0f3b5aae4365a054fcf50d633651d549e5b24fa1a0b7",
+      "timestamp": 1744719286.61095,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "06efa65c-0470-461f-a8f3-af0d7be9d7ff",
+        "status": "COMPLETED",
+        "timestamp": 1744719286,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "eec2afd57ea487315b1ff6a378550fe61cfec340076e008af08d9b79cb3c10d2",
+      "timestamp": 1744720911.0189292,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "122e7cd3-618e-443d-81af-229e6183788f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744720911,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "97294938acfc06efbcf8e519628039d2297a62422acb8e0be9c72d8b634c930b",
+      "timestamp": 1744720911.0499766,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "122e7cd3-618e-443d-81af-229e6183788f",
+        "status": "COMPLETED",
+        "timestamp": 1744720911,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b43f75acdb5d624e0b326a5c315b6db48854f7032f3b6b24b100095719b34ea6",
+      "timestamp": 1744722827.3579223,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "9a3a34f9-984e-4a65-b98e-317f3e46ad2a",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744722827,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "96eeaf67eafadb405aa1a7cbe33992017b3618f21f6a7133c4b4aaea5dc2da59",
+      "timestamp": 1744722827.4011164,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "9a3a34f9-984e-4a65-b98e-317f3e46ad2a",
+        "status": "COMPLETED",
+        "timestamp": 1744722827,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "555a1a974db43f2b2eb9c60b262ad9ae6be93aae9f47450f5f498528dd593317",
+      "timestamp": 1744723443.2619867,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "a1bf038b-72aa-4aae-84c3-762929e3e584",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744723443,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "69f7693c587431437e96290f737e8db5afd134d9c2001477ebc0ad05189ce8fb",
+      "timestamp": 1744723443.3041165,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "a1bf038b-72aa-4aae-84c3-762929e3e584",
+        "status": "COMPLETED",
+        "timestamp": 1744723443,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "2ff35258e660d79b6ab42b4b48b5a6260bbacb993c19f68f461ed5970a2509c1",
+      "timestamp": 1744768976.4068494,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "f9b82042-0c85-4332-b8e0-de3bdc322c9c",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744768976,
+        "parameters": {
+          "max_compounds": 100,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "aefe0214747593568f6261d3a90db6cfc2e4b33a5337c48c52a04caba13c4a81",
+      "timestamp": 1744768976.44749,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "f9b82042-0c85-4332-b8e0-de3bdc322c9c",
+        "status": "COMPLETED",
+        "timestamp": 1744768976,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "20f165bd278a6927c768a90643333fcf4b2a9c6ad53cf6af8efd6a4568d29bf1",
+      "timestamp": 1744769598.3307226,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "f7864a10-cff5-4f30-b244-650fd06ff185",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744769598,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "f3661fe6e6f4404ac15319478b0d86a33a3a12259ccae208a0c72d12a01f5e6e",
+      "timestamp": 1744769598.3886933,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "f7864a10-cff5-4f30-b244-650fd06ff185",
+        "status": "COMPLETED",
+        "timestamp": 1744769598,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "3ca952e0c80bf333bbb4da70ee118d26e7ffb4e59def242d8c94630e05646c7a",
+      "timestamp": 1744770049.516603,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "c31979fe-2076-4fdf-aa5e-62968d58264e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744770049,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "3bcc78c5d9f333e57a586fd39df68239d96a2631a52cc24ad79c5ef66b40f28f",
+      "timestamp": 1744770049.6162324,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "c31979fe-2076-4fdf-aa5e-62968d58264e",
+        "status": "COMPLETED",
+        "timestamp": 1744770049,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "cfe6592a641e0af74b9d7206897dc5d844c8ec40a5d80387184faa58fe2c238d",
+      "timestamp": 1744771404.5025203,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "bdda33b5-d9b3-4d5a-acfa-3921c8353966",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744771404,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "745f6ddb80ea79eab39eda998ce0e867db8dbdf21098e04b14b2bac160087a66",
+      "timestamp": 1744771404.5379686,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "bdda33b5-d9b3-4d5a-acfa-3921c8353966",
+        "status": "COMPLETED",
+        "timestamp": 1744771404,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "26291513f2f0c434d48063a37788c865a2360ddaf03b30c0e5e83ff7914ddee2",
+      "timestamp": 1744772320.1009977,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "91fd311e-fd3a-4d43-afa6-ce2d50c23aef",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744772320,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "b91ee0a6c692c6a54ab16905af0006b22c9e401c09ccfee01906318ccfb886ce",
+      "timestamp": 1744772320.1397634,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "91fd311e-fd3a-4d43-afa6-ce2d50c23aef",
+        "status": "COMPLETED",
+        "timestamp": 1744772320,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "369a1af8be44722f24004b7c088b2451bccf6511d0eee296c7f0c42ed959371c",
+      "timestamp": 1744775493.4693654,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "dda9d068-f003-4f74-99a3-b1437a2b6cf3",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744775493,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "dbbd5da709c122b5fa8b0b861d1e5e73e7d626746600eb3f9d790889b04c5e8e",
+      "timestamp": 1744775493.5003202,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "dda9d068-f003-4f74-99a3-b1437a2b6cf3",
+        "status": "COMPLETED",
+        "timestamp": 1744775493,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "503bcbea20683a1d37503823397f7822930276d13d9a53b010f21037840df3d6",
+      "timestamp": 1744776055.1654077,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "9dc13500-9862-44cf-ab41-0d52bb72bd62",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744776055,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d9a90a69fc7ac713a5c88cd76111127ba0a35e78dc1e5824b5cf051780a2f68e",
+      "timestamp": 1744776055.192445,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "9dc13500-9862-44cf-ab41-0d52bb72bd62",
+        "status": "COMPLETED",
+        "timestamp": 1744776055,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "8120770a5f814bed322f651354556efd7e7b548316c41eeca55fb5aca58d9435",
+      "timestamp": 1744779477.2599819,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "1c279986-5073-42e6-903f-7818518058c9",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744779477,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "df5da8b00631f9e82e39f4bc7f5b49b2fe2ebd5ebdcd361b69cff1b5a0ffd928",
+      "timestamp": 1744779477.2855957,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "1c279986-5073-42e6-903f-7818518058c9",
+        "status": "COMPLETED",
+        "timestamp": 1744779477,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "aa7885e5bd1db425133e4b838a4f8a94b83268da7010908f613ca2dca8fc3c40",
+      "timestamp": 1744785583.7504566,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "659882f5-b57d-4686-b2a7-e28329de446a",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744785583,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "6ba60241cc4ceced1c17d49a421fa44966085d4407e277c852f71fa9112714c4",
+      "timestamp": 1744785583.8357813,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "659882f5-b57d-4686-b2a7-e28329de446a",
+        "status": "COMPLETED",
+        "timestamp": 1744785583,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "f3d9ecb112839710d82342390ba354bfb1974a42fe828798561dd6003c8882a6",
+      "timestamp": 1744785926.785474,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "5c83b253-0585-4065-bb39-db9d5852dbd3",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744785926,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a174ffe76dce17b96f51779f7164a4c10159e4d80131649a46a68a9bd4bcd501",
+      "timestamp": 1744785926.8420813,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "5c83b253-0585-4065-bb39-db9d5852dbd3",
+        "status": "COMPLETED",
+        "timestamp": 1744785926,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "3d6ff35529eed50bea7c5528ea2ab4a1aeacf1ff8f6db1ad7e1ba6dc19ebf5a0",
+      "timestamp": 1744786190.6445477,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "0750749d-07cf-4174-a2f1-9f0ec8234384",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744786190,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "5ffcea047ee63523bbecd2124e6c784afda7c20629ad31813d211c8d742fcc78",
+      "timestamp": 1744786190.7045045,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "0750749d-07cf-4174-a2f1-9f0ec8234384",
+        "status": "COMPLETED",
+        "timestamp": 1744786190,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "09517324083324b1a0cfc3592688ccfcf20333e0f6d7c02e4712658cec7c38ca",
+      "timestamp": 1744786538.609727,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "89130587-cbfe-4272-b10e-7a946a6baea2",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744786538,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a85f26a00e0e35d780adb45ecd150152c56e06df6ac63a95b42a0c9f62dadde2",
+      "timestamp": 1744786538.6465166,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "89130587-cbfe-4272-b10e-7a946a6baea2",
+        "status": "COMPLETED",
+        "timestamp": 1744786538,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "f46038a86da9ca8aad4c3e8c51d7af54373fa014fc6edb5fa007bbc47493476e",
+      "timestamp": 1744787118.6367943,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "4cb0eb8a-c9f3-44a0-8e1e-a2dbac876861",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744787118,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "7c9fcd88973048339d0715bc4f73d83aae0d448b5adcc2f1abdc66f1a33f932e",
+      "timestamp": 1744787118.6868806,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "4cb0eb8a-c9f3-44a0-8e1e-a2dbac876861",
+        "status": "COMPLETED",
+        "timestamp": 1744787118,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "ae02b7020d6cf3cfe8f1588fa72971cf11a0e5f7b88d66e64d2f1460dc8069ba",
+      "timestamp": 1744787770.6507905,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "f00a1e1a-42f3-4c29-98cd-9bc03b63d302",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744787770,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "fee7e0b569b6737873d268f772a77154a2dc404ab1b985f0961a0c152914801e",
+      "timestamp": 1744787770.684111,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "f00a1e1a-42f3-4c29-98cd-9bc03b63d302",
+        "status": "COMPLETED",
+        "timestamp": 1744787770,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "4e54229002e9cf9f39d1565315c202cb0dc3dd665053e2686961a826a6c3b148",
+      "timestamp": 1744787770.800526,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "2ffffba0-2dfa-4d96-b5e8-cb2134b7e020",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744787770,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "56245c25713b5d694e3e934955d839fad5602e37468da7c5a5a986e01bcd2047",
+      "timestamp": 1744787770.9142687,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "2ffffba0-2dfa-4d96-b5e8-cb2134b7e020",
+        "status": "COMPLETED",
+        "timestamp": 1744787770,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "b1ad4baf5a44ce7e838a016714dc11d5c2bd7d2b49d8f3d2a3c3a793df2f310c",
+      "timestamp": 1744853383.0853508,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "6fee33d7-9a19-42b9-aa56-65c954a2776e",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744853383,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "042f55813f22e0d527767f3042693400ddb13b9848dc3ff6a8587a5f6efc4bde",
+      "timestamp": 1744853383.1489186,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "6fee33d7-9a19-42b9-aa56-65c954a2776e",
+        "status": "COMPLETED",
+        "timestamp": 1744853383,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "3d5bb951256b96a54f86991bc331ea42281add6026ea2ed1e2a05d4e94334561",
+      "timestamp": 1744854123.2303126,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "78b3e302-1d56-4a98-ad91-6c3287f522c0",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744854123,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "59835396b72c1d650e5f5cc8a6663cca8fc75020da0c58677f6445e823dc3f80",
+      "timestamp": 1744854123.2662773,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "78b3e302-1d56-4a98-ad91-6c3287f522c0",
+        "status": "COMPLETED",
+        "timestamp": 1744854123,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "7f0d163e3ac9fe7c5377e4d51a39f37ecf8f5a22cf3368c6f7222aabfc9796b8",
+      "timestamp": 1744855124.8148332,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "0a76f020-58e9-42ed-abfc-d480134c2786",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744855124,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "ce041fafc134df605569dc5355156bd88febfe4227600406f12fb1fd158979d7",
+      "timestamp": 1744855124.843308,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "0a76f020-58e9-42ed-abfc-d480134c2786",
+        "status": "COMPLETED",
+        "timestamp": 1744855124,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "f08d631d83c0a9b12a5f02ee36738f7e80539a95061c9374b1d1e047255dcca1",
+      "timestamp": 1744856023.0812259,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "0369da6d-9d8b-49a6-9007-9654d8489f86",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744856023,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "5a151b7ade7f1e366c5fce70317ee2627c4c4336fe409d4935dc1595a062579f",
+      "timestamp": 1744856023.1176753,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "0369da6d-9d8b-49a6-9007-9654d8489f86",
+        "status": "COMPLETED",
+        "timestamp": 1744856023,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "dbab67611fff79ec6d08c0d29e39797737ce450d53d3b5dace2114b7039c4c5f",
+      "timestamp": 1744858171.9001343,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "ae1ad498-46fd-4734-bd3b-fe3444e86a3f",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744858171,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "9d6c95fe485ec41816df0a4bf2ebad0d8369d2cbdfc7f56a25e118381622becc",
+      "timestamp": 1744858171.9533591,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "ae1ad498-46fd-4734-bd3b-fe3444e86a3f",
+        "status": "COMPLETED",
+        "timestamp": 1744858171,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "27bcf04bb0b3c107fd21374fb5db13da52f3ae3f9b75a974374fd3921c0a5b84",
+      "timestamp": 1744866345.3003473,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "af310304-67b9-4ada-befa-71465f76089c",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744866345,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a84fc714c370ee1fa363c4f5749a64955abe19b5ee7df634d858a2239ba6908f",
+      "timestamp": 1744866345.3319683,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "af310304-67b9-4ada-befa-71465f76089c",
+        "status": "COMPLETED",
+        "timestamp": 1744866345,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "4e247073b6a1425a7ddbca146224093a039d5749062ef5d36ebc720fc49130a6",
+      "timestamp": 1744869510.1190288,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "8bdcdbec-d1fc-453e-aabd-cbd3cdd343eb",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744869510,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "89632fcf9f6a2b2537d4e39d5aa56542f89e40b79bec1e171fb10526385cb4eb",
+      "timestamp": 1744869510.1587079,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "8bdcdbec-d1fc-453e-aabd-cbd3cdd343eb",
+        "status": "COMPLETED",
+        "timestamp": 1744869510,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "abf484b7e646d02b7f205b132c3bcfdcddd4d10aef5a19fcd498ff9857e3b3d8",
+      "timestamp": 1744870143.2422698,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "aee9a556-791a-4a06-bca7-58d7ef006327",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744870143,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "a82c03a58e517e26bfdef33a023eb07dc3197bf47651ec160c652a17964ef7ba",
+      "timestamp": 1744870143.2693863,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "aee9a556-791a-4a06-bca7-58d7ef006327",
+        "status": "COMPLETED",
+        "timestamp": 1744870143,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "6535517c1ae9c65ef0e750579a3dc9b98afe3a46a563a6406e36f5a9f593c8c6",
+      "timestamp": 1744871794.3593595,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "b9a8331e-b625-4a53-84e6-422285b45889",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744871794,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "b03dcda554e314759ca727f56dffbd19981556f371fb6b53d44ed3fd9b6393a9",
+      "timestamp": 1744871794.3967578,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "b9a8331e-b625-4a53-84e6-422285b45889",
+        "status": "COMPLETED",
+        "timestamp": 1744871794,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "6dbd256e28e0c84fae0733219576da44a7e3fcba90ccb81947ef8ba5aa225f91",
+      "timestamp": 1744872243.908976,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "e6491b61-2c89-413f-8775-1619cc895a76",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744872243,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "b54aa0a93d9d45378af5676eacdfc1e87c9aa3eabfc48681343b95a80b7830f6",
+      "timestamp": 1744872243.9409297,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "e6491b61-2c89-413f-8775-1619cc895a76",
+        "status": "COMPLETED",
+        "timestamp": 1744872243,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    },
+    {
+      "tx_id": "90a87c7b730ec15f826974a04f32dd805a0045e6eb58bff4cd563fdc004301a6",
+      "timestamp": 1744900737.3557131,
+      "function": "recordWorkflowStart",
+      "args": {
+        "workflowId": "ca5c5a0d-4ed2-485a-849e-2bc8a2dc6edf",
+        "templateId": "amyloid-prediction",
+        "timestamp": 1744900737,
+        "parameters": {
+          "max_compounds": 1000,
+          "thorough_mode": true
+        }
+      }
+    },
+    {
+      "tx_id": "d6959d08afbe5e2cc1af37a03710f54ec7e249f68ed4e6b2dbdaaee4b5ed0816",
+      "timestamp": 1744900737.3854258,
+      "function": "recordWorkflowCompletion",
+      "args": {
+        "workflowId": "ca5c5a0d-4ed2-485a-849e-2bc8a2dc6edf",
+        "status": "COMPLETED",
+        "timestamp": 1744900737,
+        "results": {
+          "message": "Workflow completed successfully"
+        },
+        "error": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "protein-analysis",
+    "name": "Protein Analysis Workflow",
+    "description": "Perform analysis on protein structure and properties",
+    "version": "1.0.0",
+    "parameters_schema": {
+      "protein_id": {
+        "type": "string",
+        "description": "ID of the protein to analyze",
+        "default": ""
+      },
+      "analysis_type": {
+        "type": "string",
+        "description": "Type of analysis to perform",
+        "enum": ["structure", "sequence", "function"],
+        "default": "structure"
+      },
+      "output_format": {
+        "type": "string",
+        "description": "Format of the analysis output",
+        "enum": ["json", "csv", "txt"],
+        "default": "json"
+      }
+    },
+    "command": "docker run --rm -v ${WORKDIR}:/data xaviwho/protein-analysis:latest analyze_protein.py --protein_id ${protein_id} --analysis_type ${analysis_type} --output_format ${output_format} --output /data/results.${output_format}",
+    "container_image": "xaviwho/protein-analysis:latest",
+    "inputs": [
+      {
+        "name": "protein_id",
+        "description": "ID of the protein to analyze",
+        "type": "string"
+      },
+      {
+        "name": "analysis_type",
+        "description": "Type of analysis to perform",
+        "type": "string"
+      },
+      {
+        "name": "output_format",
+        "description": "Format of the analysis output",
+        "type": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "results",
+        "description": "Analysis results",
+        "path": "results.${output_format}"
+      },
+      {
+        "name": "log",
+        "description": "Execution log",
+        "path": "stdout.txt"
+      }
+    ],
+    "resources": {
+      "cpu": "1",
+      "memory": "1Gi"
+    },
+    "timeout": 3600
+  }

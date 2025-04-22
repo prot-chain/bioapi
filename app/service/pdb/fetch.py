@@ -1,6 +1,6 @@
-from service.utils import pdb_file_download_link
-from schema.pdb import PDBEntry
-from schema.protein import EntryAudit, ProteinData
+from app.service.utils import pdb_file_download_link
+from app.schema.pdb import PDBEntry
+from app.schema.protein import EntryAudit, ProteinData
 from httpx import AsyncClient
 
 
@@ -21,12 +21,32 @@ class PDBFetchService:
         Returns:
             dict: Raw protein data.
         """
+        import logging
+        logger = logging.getLogger(__name__)
+        
         async with AsyncClient() as client:
-            response = await client.get(f"{self.BASE_URL}/{protein_id}")
+            url = f"{self.BASE_URL}/{protein_id}"
+            logger.info(f"Fetching protein data from: {url}")
+            
+            response = await client.get(url)
+            logger.info(f"PDB API response status: {response.status_code}")
+            
             if response.status_code != 200:
-                raise Exception(f"Failed to fetch protein data for ID {protein_id}")
-            data = PDBEntry(**response.json())
-            return data
+                error_msg = f"Failed to fetch protein data for ID {protein_id}. Status: {response.status_code}"
+                if response.text:
+                    error_msg += f". Response: {response.text}"
+                logger.error(error_msg)
+                raise Exception(error_msg)
+            
+            try:
+                json_data = response.json()
+                logger.info(f"Successfully parsed JSON for protein {protein_id}")
+                data = PDBEntry(**json_data)
+                return data
+            except Exception as e:
+                error_msg = f"Failed to parse protein data for ID {protein_id}: {str(e)}"
+                logger.error(error_msg)
+                raise Exception(error_msg)
 
     async def parse_protein_data(self, data: PDBEntry) -> ProteinData:
         """
