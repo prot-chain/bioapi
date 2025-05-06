@@ -13,7 +13,8 @@ async def store_on_ipfs(content: str) -> str:
     try:
         # Use the HTTP API directly instead of the client library
         # This works with any IPFS version
-        url = 'http://127.0.0.1:5001/api/v0/add'
+        # Use the Docker service name for communication between containers
+        url = 'http://ipfs:5001/api/v0/add' # Match the service name in docker-compose.yml
         files = {
             'file': ('pdb_file.pdb', content)
         }

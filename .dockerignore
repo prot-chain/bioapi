@@ -1,0 +1,21 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore common Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore other build artifacts if any
+dist/
+build/
+*.egg-info/
+
+# Ignore the deployments directory itself if not needed in context
+# (can be uncommented if causing issues or large context)
+# deployments/

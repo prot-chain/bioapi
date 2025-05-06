@@ -1,7 +1,10 @@
-from fastapi import APIRouter, HTTPException, BackgroundTasks
-from typing import List, Dict, Any, Optional
-from datetime import datetime
 import os
+from typing import List, Dict, Any
+
+print("Executing workflow.py top-level")
+
+from fastapi import APIRouter, HTTPException, BackgroundTasks
+from datetime import datetime
 import yaml
 from enum import Enum
 import json
@@ -30,12 +33,11 @@ upload_dir = os.environ.get('UPLOAD_DIR', 'uploads')
 binding_site_analyzer = BindingSiteAnalysis(upload_dir)
 structure_prep = StructurePreparation(upload_dir)
 
-@router.get("/templates", response_model=List[Dict])
+@router.get("/templates", response_model=List[WorkflowTemplateSchema])
 async def list_workflow_templates():
     """List available workflow templates"""
     templates = workflow_engine.list_templates()
-    # Convert Pydantic models to dictionaries
-    return [template.dict() for template in templates]
+    return templates
 
 @router.post("", response_model=Dict[str, Any])
 async def submit_workflow(submission: Dict[str, Any], background_tasks: BackgroundTasks):
@@ -120,6 +122,33 @@ async def get_workflow(workflow_id: str):
     if not workflow:
         raise HTTPException(status_code=404, detail="Workflow not found")
     return workflow.dict()
+
+@router.post("/{workflow_id}/structure", response_model=Dict)
+async def process_structure_endpoint(workflow_id: str, request_data: Dict[str, str]):
+    """Process the uploaded structure file for a given workflow."""
+    file_path = request_data.get("file_path")
+    if not file_path:
+        raise HTTPException(status_code=400, detail="file_path not provided in request body")
+
+    # Check if the workflow exists (optional, but good practice)
+    workflow = workflow_engine.get_workflow(workflow_id)
+    if not workflow:
+        raise HTTPException(status_code=404, detail=f"Workflow {workflow_id} not found")
+
+    try:
+        print(f"Calling structure_prep.prepare_structure for workflow {workflow_id} with path {file_path}")
+        result = structure_prep.prepare_structure(pdb_file_path=file_path, workflow_id=workflow_id)
+        print(f"structure_prep.prepare_structure returned: {result}")
+
+        if result.get("status") == "error":
+            print(f"Error during prepare_structure: {result.get('message')}")
+            raise HTTPException(status_code=500, detail=result.get("message", "Unknown error during structure preparation."))
+
+        print(f"Successfully processed structure for workflow {workflow_id}")
+        return {"message": "Structure processed successfully.", "details": result}
+    except Exception as e:
+        print(f"Unexpected error during structure processing for workflow {workflow_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to process structure: {str(e)}")
 
 @router.post("/{workflow_id}/binding-site-analysis", response_model=Dict)
 async def run_binding_site_analysis(workflow_id: str, background_tasks: BackgroundTasks):

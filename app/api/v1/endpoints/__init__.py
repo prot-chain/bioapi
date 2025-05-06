@@ -1,5 +1,4 @@
-from fastapi import APIRouter
-
-# Use relative imports instead of absolute
-from . import protein  # Import existing endpoints
-from . import workflow  # Import the new workflow endpoints
+# Expose the modules for importing
+print("Executing endpoints/__init__.py") 
+from . import protein
+from . import workflow

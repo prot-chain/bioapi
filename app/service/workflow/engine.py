@@ -33,10 +33,7 @@ class WorkflowEngine:
         
         # Set up directories
         self.base_dir = settings.data_dir
-        self.templates_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "templates")
-        # Also check in app/templates
-        if not os.path.exists(self.templates_dir):
-            self.templates_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "app", "templates")
+        self.templates_dir = "/app/data/templates"
         self.workflows_dir = os.path.join(self.base_dir, "workflows")
         self.results_dir = os.path.join(self.base_dir, "workflow_results")
         self.upload_dir = os.path.join(self.base_dir, "uploads", "structures")
@@ -144,7 +141,7 @@ class WorkflowEngine:
                             id=filename.rsplit('.', 1)[0],
                             name=template_data.get('name', filename),
                             description=template_data.get('description', ''),
-                            parameters=template_data.get('parameters', {})
+                            steps=template_data.get('steps', [])
                         )
                         templates.append(template)
                         print(f"Loaded template: {template.id}")

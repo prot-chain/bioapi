@@ -1,0 +1,17 @@
+# Ignore the virtual environment directory located one level up
+../venv/
+
+# Ignore common Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore other build artifacts if any
+dist/
+build/
+*.egg-info/

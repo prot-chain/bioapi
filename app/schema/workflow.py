@@ -45,7 +45,7 @@ class WorkflowTemplateSchema(BaseModel):
     id: str
     name: str
     description: str
-    parameters_schema: Dict[str, Any] = {}
+    steps: List[Dict[str, Any]] = []
 
 class WorkflowVerificationSchema(BaseModel):
     valid: bool

@@ -1,3 +1,4 @@
 #!/bin/bash
 export PYTHONPATH=/app
-exec "$@"
+echo "Entrypoint PATH: $PATH"
+uvicorn app.app:app --host 0.0.0.0 --port 8000

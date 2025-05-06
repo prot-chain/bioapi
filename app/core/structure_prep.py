@@ -25,11 +25,26 @@ class StructurePreparation:
         5. Save processed structure
         """
         try:
-            # Verify file exists
-            if not os.path.exists(pdb_file_path):
+            import time # <-- Add this import at the top of the try block or beginning of file
+
+            # Verify file exists, with retry for volume mount delay
+            max_retries = 5
+            retry_delay = 0.5 # seconds
+            file_found = False
+            for attempt in range(max_retries):
+                if os.path.exists(pdb_file_path):
+                    file_found = True
+                    print(f"Found PDB file on attempt {attempt + 1}")
+                    break
+                else:
+                    print(f"PDB file not found on attempt {attempt + 1}, retrying in {retry_delay}s...")
+                    time.sleep(retry_delay)
+
+            if not file_found:
+                print(f"PDB file still not found after {max_retries} attempts.")
                 return {
                     "status": "error",
-                    "message": f"PDB file not found at path: {pdb_file_path}"
+                    "message": f"PDB file not found at path after retries: {pdb_file_path}"
                 }
 
             # Create workflow directory

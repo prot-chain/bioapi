@@ -20,7 +20,8 @@ class PDBHandler:
     def __init__(self):
         os.makedirs(CACHE_DIR, exist_ok=True)
         self.parser = PDBParser(QUIET=True)
-        self.ipfs = ipfshttpclient.connect('/ip4/127.0.0.1/tcp/5001')
+        # Connect to IPFS using the Docker service name
+        self.ipfs = ipfshttpclient.connect('/dns/ipfs-kubo/tcp/5001')
         
     def _calculate_binding_sites(self, structure) -> List[Dict]:
         """Calculate potential binding sites using cavity detection"""
